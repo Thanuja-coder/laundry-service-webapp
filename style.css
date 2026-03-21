@@ -10,8 +10,6 @@ color:#333;
 }
 
 
-/* NAVBAR */
-
 .navbar{
 display:flex;
 justify-content:space-between;
@@ -35,12 +33,7 @@ list-style:none;
 .nav-links a{
 text-decoration:none;
 color:#444;
-font-weight:500;
 }
-
-
-
-/* HERO */
 
 .hero{
 display:flex;
@@ -74,16 +67,12 @@ color:white;
 border:none;
 border-radius:8px;
 font-size:15px;
-cursor:pointer;
 }
 
 .hero-right img{
 width:320px;
 }
 
-
-
-/* SERVICE OVERVIEW */
 
 .overview{
 background:#4a6cf7;
@@ -99,9 +88,6 @@ margin:0;
 font-size:28px;
 }
 
-
-
-/* BOOKING SECTION */
 
 .booking-section{
 padding:60px;
@@ -146,7 +132,7 @@ border:none;
 color:white;
 padding:6px 14px;
 border-radius:6px;
-cursor:pointer;
+
 }
 
 
@@ -155,10 +141,6 @@ color:#4a6cf7;
 margin-top:15px;
 font-size:14px;
 }
-
-
-
-/* RIGHT SIDE */
 
 .services-right{
 flex:1;
@@ -178,8 +160,6 @@ box-shadow:0 5px 20px rgba(0,0,0,0.05);
 margin-top:15px;
 font-weight:bold;
 }
-
-
 
 .booking-form{
 background:white;
@@ -207,10 +187,6 @@ font-size:15px;
 cursor:pointer;
 }
 
-
-
-/* QUALITY */
-
 .quality{
 padding:70px;
 text-align:center;
@@ -230,9 +206,6 @@ border-radius:10px;
 box-shadow:0 4px 15px rgba(0,0,0,0.05);
 }
 
-
-
-/* NEWSLETTER */
 
 .newsletter{
 background:#4a6cf7;
@@ -257,13 +230,27 @@ border-radius:6px;
 }
 
 
-
-/* FOOTER */
-
 .footer{
 background:#111;
 color:white;
 text-align:center;
 padding:40px;
 margin-top:40px;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .hero-right img {
+    width: 200px;
+  }
+
 }
