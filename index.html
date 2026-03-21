@@ -5,8 +5,10 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Laundry Service</title>
-
+     
      <link rel="stylesheet" href="style.css">
+     
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 </head>
 
@@ -14,16 +16,19 @@
 
 <nav class="navbar">
 
-     <div class="logo">LaundryPro</div>
-
+     <div class="logo">
+        <h1>Logo</h1>
+    </div>
+        <div >
         <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
         </ul>
+    </div>
 
-    <div class="username">Hi, Thanuja</div>
+    <div class="username">UserName</div>
 
 </nav>
 
@@ -51,6 +56,9 @@
 
 
 <section class="overview">
+    <div class="achievments" >
+        <h1>Our Achievements</h1>
+    </div>
     <div class="overview-box">
          <h2>15+</h2>
          <p>Laundry Services</p>
@@ -75,47 +83,46 @@
       <div class="services-container">
         <div class="services-left">
             <h2>Our Services</h2>
-            <p class="sub">Click On The Add To Cart Button To Add The Services</p>
             <div class="service-item">
-                <span>👕 Dry Cleaning</span>
-                <span>₹200</span>
+                <span>Dry Cleaning</span>
+                <span>Rs.200</span>
                 <button class="add-btn" data-name="Dry Cleaning" data-price="200">
                     Add Item
                 </button></div>
                 <div class="service-item">
-                    <span>🧺 Wash & Fold</span>
-                    <span>₹100</span>
+                    <span>Wash & Fold</span>
+                    <span>Rs.100</span>
                     <button class="add-btn" data-name="Wash & Fold" data-price="100">
                         Add Item </button>
                 </div>
                 <div class="service-item">
-                    <span>🧼 Ironing</span>
-                    <span>₹30</span>
+                    <span>Ironing</span>
+                    <span> Rs.30</span>
                     <button class="add-btn" data-name="Ironing" data-price="30">
                         Add Item
                     </button>
                 </div>
                 <div class="service-item">
-                    <span>💧 Stain Removal</span>
-                    <span>₹500</span>
+                    <span>Stain Removal</span>
+                    <span>Rs.500</span>
                     <button class="add-btn" data-name="Stain Removal" data-price="500">
                         Add Item
                     </button>
                 </div>
 
                 <div class="service-item">
-                    <span>🧥 Leather Cleaning</span>
-                    <span>₹999</span>
+                    <span>Leather Cleaning</span>
+                    <span>Rs.999</span>
                     <button class="add-btn" data-name="Leather Cleaning" data-price="999">
                         Add Item </button>
                     </div>
                     <p class="info">ℹ Add the items to the cart and book now</p>
                 </div>
-                <div class="services-right">
+    <div class="services-right">
                     <div class="cart-box">
                         <h3>Added Items</h3>
-                        <ul id="cartItems"></ul>
-                        <div class="total"> Total Amount ₹ <span id="total">0</span>
+                        <ul id ="cartItems" class="cartItems"></ul>
+                        <div class="total"> Total Amount:   Rs. <span id="total">0</span>
                         </div>
                     </div>
                     <div class="booking-form">
@@ -142,7 +149,7 @@
             <p>24/7 customer assistance.</p>
         </div>
         <div>
-            <h3>Timely Delivery</h3>
+            <h3>Hassle Free Delivery</h3>
             <p>Fast pickup and delivery.</p>
         </div>
         <div>
@@ -163,14 +170,34 @@
 </section>
 
 <footer id="contact" class="footer">
-    <h3>LaundryPro</h3>
-    <p>About Us | Contact Us | Terms</p>
-    <p>Follow Us</p>
-    <p>Instagram | Facebook | Twitter</p>
-
+   <div class="f1">
+      <h3 class="logo">Logo</h3>
+      <p><b>About Us</b></p>
+      <p>Lorem ipsum dolor sit amet </p>
+   </div>
+   <div class="f1">
+    <h3>Important Links</h3>
+    <p>About Us</p>
+    <p>Contact Us</p>
+    <p>Privacy Policy</p>
+    <p>Terms of Use</p>
+    <p>Refund Policy</p>
+    </div>
+    <div class="f1">
+        <h3>Contact</h3>
+        <p><b>Phone:</b> +91 1234567890</p>
+        <p><b>Email:</b>info@laundryservice.com</p>
+    </div>
+    <div class="f1">
+        <h3>Follow Us</h3>
+        <p>Instagram|Facebook|Twitter</p>
+    </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="cart.js"></script>
+     <script src="form.js"></script>
+     <script src="email.js"></script>
+     <script src="script.js"></script>
 
 </body>
 </html>
